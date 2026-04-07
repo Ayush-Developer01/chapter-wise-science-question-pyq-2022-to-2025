@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 10 Science Chapters Index">
+    <title>Class 10 Science Chapters</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --accent-color: #3b82f6;
+            --accent-hover: #60a5fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 1.5rem;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(96, 165, 250, 0.3);
+        }
+
+        p.subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .chapter-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-hover);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+            background: rgba(30, 41, 59, 0.9);
+        }
+
+        .chapter-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-right: 1.2rem;
+            opacity: 0.8;
+            min-width: 40px;
+        }
+
+        .chapter-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .chapters-grid {
+                grid-template-columns: 1fr;
+            }
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Class 10 Science</h1>
+        <p class="subtitle">Select a chapter to begin learning</p>
+    </header>
+
+    <main>
+        <section class="chapters-grid" aria-label="List of Science Chapters">
+            <a href="Chemical Reactions and Equations.html" class="chapter-card">
+                <span class="chapter-number">01</span>
+                <span class="chapter-title">Chemical Reactions and Equations</span>
+            </a>
+            <a href="Acids, Bases and Salts.html" class="chapter-card">
+                <span class="chapter-number">02</span>
+                <span class="chapter-title">Acids, Bases and Salts</span>
+            </a>
+            <a href="Metals and Non-metals.html" class="chapter-card">
+                <span class="chapter-number">03</span>
+                <span class="chapter-title">Metals and Non-metals</span>
+            </a>
+            <a href="Carbon and its Compounds.html" class="chapter-card">
+                <span class="chapter-number">04</span>
+                <span class="chapter-title">Carbon and its Compounds</span>
+            </a>
+            <a href="Life Processes.html" class="chapter-card">
+                <span class="chapter-number">05</span>
+                <span class="chapter-title">Life Processes</span>
+            </a>
+            <a href="Control and Coordination.html" class="chapter-card">
+                <span class="chapter-number">06</span>
+                <span class="chapter-title">Control and Coordination</span>
+            </a>
+            <a href="How do Organisms Reproduce.html" class="chapter-card">
+                <span class="chapter-number">07</span>
+                <span class="chapter-title">How do Organisms Reproduce</span>
+            </a>
+            <a href="Heredity and Evolution.html" class="chapter-card">
+                <span class="chapter-number">08</span>
+                <span class="chapter-title">Heredity and Evolution</span>
+            </a>
+            <a href="Light – Reflection and Refraction.html" class="chapter-card">
+                <span class="chapter-number">09</span>
+                <span class="chapter-title">Light – Reflection and Refraction</span>
+            </a>
+            <a href="The Human Eye and the Colourful World.html" class="chapter-card">
+                <span class="chapter-number">10</span>
+                <span class="chapter-title">The Human Eye and the Colourful World</span>
+            </a>
+            <a href="Electricity.html" class="chapter-card">
+                <span class="chapter-number">11</span>
+                <span class="chapter-title">Electricity</span>
+            </a>
+            <a href="Magnetic Effects of Electric Current.html" class="chapter-card">
+                <span class="chapter-number">12</span>
+                <span class="chapter-title">Magnetic Effects of Electric Current</span>
+            </a>
+            <a href="Our Environment.html" class="chapter-card">
+                <span class="chapter-number">13</span>
+                <span class="chapter-title">Our Environment</span>
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>
